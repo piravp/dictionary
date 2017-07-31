@@ -1,11 +1,15 @@
 # Dictionary
 
-*The Dictionary About (Almost) Everything.*
+<p align="left">
+    <img src="./resources/dict.jpg" width="400"/>
+</p>
+
+**The Dictionary About (Almost) Everything.**
 
 ### About
 The idea is to provide definitions for common words and terms in software engineering, cryptography, mathematics and physics - in Layman's terms.  
 
-Especially for beginners, the new terms can be overwhelming. This document seeks to solve this by providing real world examples whenever possible. Note that the first two chapters, *Computer Science* and *Encryption*, is covered most heavily. 
+Especially for beginners, the new terms can be overwhelming. This document seeks to solve this by providing real world examples whenever possible. Note that the first two chapters, *Computer Science* and *Encryption*, is covered most heavily (at this point). 
 
 
 **Areas covered by the book at this point:**

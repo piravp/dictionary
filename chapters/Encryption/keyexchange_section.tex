@@ -1,0 +1,39 @@
+%Numbered environment
+\newcounter{example}[section]
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+   \noindent \textbf{Example~\theexample. #1} \rmfamily}{\medskip}
+ 
+
+\section{Key exchange}
+
+\textbf{Diffie-Hellman key exchange} \\
+Diffie-Hellman is an algorithm used to establish a shared secret between two parties. It is primarily used as a method of exchanging cryptography keys for use in symmetric encryption algorithms like AES \cite{keyexchange:diff-hellman}.
+
+\begin{example}
+A Diffie-Hellman exhange:
+\end{example}
+
+
+
+\begin{enumerate}
+% 1
+\item Alice and Bob agree on a prime number, \textcolor{red}{$p$}, and a base, \textcolor{blue}{$g$}, in advance. For our example, let's assume that \textcolor{red}{$p=23$} and \textcolor{blue}{$g=5$}.
+
+% 2
+\item Alice chooses a secret integer \textcolor{ForestGreen}{$a$} whose value is $6$ and computes \textcolor{orange}{A} = \textcolor{blue}{$g$}\textcolor{ForestGreen}{$^a$} $mod$ \textcolor{red}{$p$}. In this example, \textcolor{orange}{$A$} has the value of $8$.
+
+% 3
+\item Bob chooses a secret integer \textcolor{ForestGreen}{$b$} whose value is 15 and computes \textcolor{orange}{B} = \textcolor{blue}{$g$} \textcolor{ForestGreen}{$^b$} $mod$ \textcolor{red}{$p$}. In this example, \textcolor{orange}{B} has the value of 19.
+
+% 4
+\item Alice sends \textcolor{orange}{$A$} to Bob and Bob sends \textcolor{orange}{$B$} to Alice.
+
+% 5
+\item To obtain the shared secret, Alice computes \textcolor{NavyBlue}{$s =$} \textcolor{orange}{$B$} \textcolor{ForestGreen}{$^a$} $mod$ \textcolor{red}{$p$}. In this example, Alice obtains the value of \textcolor{NavyBlue}{$s=2$}.
+
+% 6
+\item To obtain the shared secret, Bob computes \textcolor{NavyBlue}{$s =$} \textcolor{orange}{$A$} \textcolor{ForestGreen}{$^b$} $mod$ \textcolor{red}{$p$}. In this example, Bob obtains the value of \textcolor{NavyBlue}{$s=2$}.
+\end{enumerate}
+
+
+

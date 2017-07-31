@@ -1,0 +1,148 @@
+% ------------- START PREAMBLE --------------------
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[left=2.5cm,right=2cm,top=2cm,bottom=2.5cm]{geometry}
+\usepackage{titlesec}
+\titleformat{\chapter}[hang]{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter:}{1em}{} % Chapter number and name on same line
+\usepackage{graphicx}                                                                           % Implement images
+\usepackage{hyperref}                                                                           % Make content of table clickable
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{biblatex}                                                                           % Bibliography
+\addbibresource{resources/bibliography.bib}                                                               % Specify .bib database
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{url}
+%\usepackage{hyperref}
+%\titlehead{\centering\includegraphics[width=6cm]{dict.jpg}}
+\usepackage{titlepic}       %Graphics in frontpage
+\usepackage[acronym,toc]{glossaries} % Packet for acronyms
+\usepackage{imakeidx}       % Indices - alphabetic list of main terms
+\makeindex[columns=2, title=Index, options= -s resources/index-style.ist]
+\usepackage{changepage}     % used to adjust indentation on subsections
+
+
+
+% ------------- END PREAMBLE --------------------
+
+
+%----------------------ACRONYMS
+\makeglossaries
+\input{resources/acronyms.tex}
+
+
+%################# BEGIN DOCUMENT ######################
+\begin{document}
+
+%---------------------------TITLEPAGE(Blank)
+\begin{titlepage}
+\title{\textbf{The Dictionary \\ About \\ (Almost) \\ Everything} }
+\titlepic{\includegraphics[width=8cm]{resources/dict.jpg}}
+\author{\textit{Piraveen Perinparajan}}
+\date{January 2017}
+\end{titlepage}
+\maketitle
+
+
+
+%---------------------------PREFACE
+\chapter*{Preface}  % the asterix prevents numbering of preface chapter
+This is a document that is meant to be understood by everyone. Ambitious? \textit{indeed}. The idea is to provide definitions for common words and terms in software engineering, cryptography, mathematics and physics, in Layman's terms. Currently the main focus is software engineering and cryptography. \\
+
+\noindent Especially for beginners, the different terms can be overwhelming. This document seeks to solve this by providing real world examples whenever it is possible. \\
+
+\noindent This project started in January 2017. \\
+\noindent Feel free to contribute.\\
+
+\noindent Happy reading!
+
+
+%-----------------------TABLE OF CONTENTS
+\addcontentsline{toc}{chapter}{Preface} %Add preface to list of contents
+\clearpage
+    \tableofcontents
+\clearpage
+
+
+\printglossary[title=Acronyms,type=\acronymtype]   % Print glossary after ToC
+\printglossary
+
+% Set vertical spacing
+\setlength{\parskip}{1.5em}   % length between each paragraph
+\setlength\parindent{0pt}   % no indentation after each paragraph for whole file
+
+
+%---------------------------Computer Science Chapter
+\chapter{Computer Science}
+
+\input{chapters/Computer-Science/basic_section.tex}
+
+\input{chapters/Computer-Science/cybersecurity_section.tex}
+
+\input{chapters/Computer-Science/networking_section.tex}
+
+\input{chapters/Computer-Science/software-dev_section.tex}
+
+\input{chapters/Computer-Science/hardware_section.tex}
+
+\input{chapters/Computer-Science/web_section.tex}
+
+\input{chapters/Computer-Science/other_section.tex}
+
+
+
+%---------------------------ENCRYPTION Chapter
+\chapter{Encryption}
+
+\input{chapters/Encryption/general_section.tex}
+
+\input{chapters/Encryption/symmetric_section.tex}
+
+\input{chapters/Encryption/keyexchange_section.tex}
+
+
+
+%---------------------------Mathematics Chapter
+\chapter{Mathematics}
+
+\input{chapters/Mathematics/calculus_section.tex}
+\input{chapters/Mathematics/linear_section.tex}
+\section{Statistics}
+\textbf{Statistics} \\
+Statistics is a branch of mathematics dealing with the collection, analysis, interpretation, presentation, and organization of data.
+
+
+%---------------------------Physics Chapter
+\chapter{Physics}
+\section{Calculus}
+\begin{itemize}{}
+    \item Moment of intertia / Treghetsmoment (n) \\
+    \textit{Empty.}
+
+    
+
+\end{itemize}
+
+
+
+%-------------------------- BIBLIOGRAPHY
+% Print indices
+\printindex
+
+
+\raggedright                    % break url to next line
+\sloppy
+\printbibliography[heading=bibintoc,title={Bibliography}]
+
+
+
+
+
+\end{document}
+
+
+
+% TODO, include these: 
+%
+% http://carlcheo.com/compsci - 40 Key Computer Science Concepts Explained In Layman’s Terms
+%
+%

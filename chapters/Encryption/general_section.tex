@@ -1,0 +1,68 @@
+\setlength{\parskip}{1.5em}   % length between each paragraph
+\setlength\parindent{0pt}   % no indentation after each paragraph for whole file
+\section{General}
+
+\textbf{Assymetric encryption\index{assymetric encryption}} \\
+Assymetric encryption (also called public-key encryption) is typically used when there's a transaction involved. Assymetric encryption has a public and priavte key. The public key is used to encrypt a message, while the private key is used to decrypt it. \\ 
+Example: RSA is an assymetric type of encryption. 
+
+\textbf{Symmetric encryption\index{symmetric encryption}} \\
+On the other hand, symmetric encryption only uses one key, the private key. It's used both for encryption and decryption. Examples on symmetric encryption includes AES, Twofish, Blowfish. 
+
+\textbf{Certificate Authority (CA)\index{certificate authority}} \\
+Certificate authorities are trusted third-party organizations who verify the identity of individuals or organizations and then issue digital certificates containing both identity information and a copy of the subject's public key. 
+
+\textbf{Digital Certificate\index{digital certificate}} \\
+A digital certificate is a license issued by the Central Authority. This is a proof for anyone visitng your site that you are actually who you are claiming to be. The digital certificate can be provided to anyone you wish to communicate to without having to worry about sending it securely, because it doesn't contain any sensitive information. The person receiving the certificate doesn't have to verify your identity directly. They simply verify that the certificate is valid, by verifying the CA's signature on the certificate. If that checks out, they know that the public key contained in the certificate does, in fact, belong to the individual or organization named on the certificate. \\
+Digital certificates should not be confused with digital signatures, which are used to verify that a message has not been tampered with. A digital certificate on the other hand associates a person with a specific public key with the help of a CA.
+
+\textbf{Digital signature\index{digital signature}} \\
+In asymmetric encryption, a message is encrypted using a public key and decrypted using a private key. That's because we are trying to create messages that only someone with a private key could read. In the case of digital signatures, we reverse this and use the private key for encryption, and the public key for decryption. That's because our goal is different. \\
+We don't want to create a secret message, but rather we want to create a message that could only have been created by a specific person who possesses the private key and can then be verified by anyone with the corresponding public key. \\
+
+Example: Let's say that Alice wants to send a message to Bob that includes Alice's digital signature.
+
+    \textbf{\small Alice's side:}
+    \begin{enumerate}
+    \item Alice takes her plain-text message and runs it through a hash function outputting a hash 9kjasd3. 
+    \item Alice takes the hash and encrypts it using her own private key, producing what is known as, a digital signature. The digital signature is just the hash encrypted with the senders private key. 
+    \item Alice sends both the plain-text message and the digial signature to Bob. 
+    \end{enumerate}
+    
+    \textbf{\small Bob's side:} \\
+    Bob now needs to verify that the message he received from Alice has not been tampered with. 
+    \begin{enumerate}
+    \item Bob takes the plain-text message and uses the same hash function Alice used to produce a hash, 9kjasd3.
+    
+    \item Bob then takes the digital signature he received, and decrypts it using Alice's public key. 
+    
+    \item He then verifies that the decrypted text is actually the hash that was produced in step 1. If not, he knows the message has been tampered with. 
+    \end{enumerate}
+
+
+
+\textbf{Hashing (message digest)\index{hashing}} \\
+Turning a variable length input into a \textit{unique} fixed length output (the hash) is called hashing. Typically, passwords are hashed (and salted) to avoid storing the password in clear-text. This is done by running the clear-text password through a hash function. Unlike encryption, hashing is a one-way street and can't be reversed to its original form. You can however be sure that, if you run that same input through the hash function, you will get the same result every time - which is the idea behind hashing passwords. \\
+Example: MD5, SHA-1 and SHA-2 are popular hashing functions. 
+
+\textbf{Hash collision\index{hash collision}} \\
+No two inputs ran through a hash function should produce the same hash. If so, we have a hash collision. A hash collision is sign of a poor hash function. \\
+Example: Researchers have been able to break (read: provoke hash collision in) MD5, and recently also SHA-1 [source].
+
+
+\textbf{Key derivation\index{key derivation}} \\
+Key derivation is a method used to create uniform keys from a non uniform source key, which the attacker may have some knowledge of. The purpose is to prevent unauthorized parties from accessing the original source key. A key is derived using a Key Derivation Function (KDF), a special algorithm designed for this purpose. In a KDF it is important that the source key contains sufficient amount of randomness preventing a potential attacker from “brute-forcing” the derived key using information about the source key.\\
+Different KDFs have different uses and are suitable for different tasks. KDFs are typically used to derive keys to perform a cryptographic operation or to store passwords. 
+
+\textbf{Public key\index{public key}} \\
+A public key is a key that can be distributed publicly. However, only the people with the private key can decrypt the message. Public keys are typically used in assymetric encryption.
+
+\textbf{Salting\index{salting}} \\
+In cryptography, a salt is a additional parameter that is used when performing a hash so that $Hash(password, salt)$. The purpose of a salt is to add an extra layer of 'randomness' to the hash. \\ Example: You have two different users that want to hash their password using the hash function $h(x)$. Unfortunately, both users have the same password, \textit{password123}. This means that $hash(password123)$, would produce the same hash for both users. This is unfortunate when storing the hash in a server that might be breached and exposed to a \textit{rainbow table attack}.            
+
+\textbf{Public Key Infrastructure (PKI)\index{public key infrastructure}} \\
+Public Key Infrastructure is a set of roles, policies, and procedures needed to create, manage, distribute, use, store, and revoke \textit{Digital Certificates} and manage public-key encryption. 
+
+
+
+\newpage

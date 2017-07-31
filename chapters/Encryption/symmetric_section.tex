@@ -1,0 +1,12 @@
+\section{Symmetric encryption}
+
+\textbf{Modes in AES} \\
+AES has 6 modes: ECB, CBC, CTR, OFB, CFB and GCM. 
+
+\begin{itemize}{}
+    \item \textbf{CBC} \\
+    CBC (Cipher Block Chaining) is one of them and is commonly used in databases. CBC uses something called an Initialization Vector (IV). This ensures that even with the same key and the same block of plaintext, you end up with encrypted ciphertext that isn’t the same. This gives a stronger security. \\
+    As the name implies, Cipher Block Chaining utilizes block chaining - which, in this context, means that it uses output from one cryptographic operation as input to the next one - creating a dependency between each block. As a result, it creates the drawback that each block has to be 16 bytes. Which means that in cases where there’s not a multiple of 16, padding is required. 
+\end{itemize}
+
+\newpage

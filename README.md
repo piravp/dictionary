@@ -9,7 +9,7 @@
 ### About
 The idea is to provide definitions for common words and terms in software engineering, cryptography, mathematics and physics - in Layman's terms.  
 
-Especially for beginners, the new terms can be overwhelming. This document seeks to solve this by providing real world examples whenever possible. Note that the first two chapters, *Computer Science* and *Encryption*, is covered most heavily (at this point). 
+Especially for beginners, new terms can be overwhelming. This document seeks to solve this by providing real world examples whenever possible. Note that the first two chapters, *Computer Science* and *Encryption*, is covered most heavily (at least at this point). 
 
 
 **Areas covered by the book at this point:**
@@ -33,4 +33,4 @@ Especially for beginners, the new terms can be overwhelming. This document seeks
 *The current version (.pdf) can be found [here](./dictionary.pdf).*
 
 ### Contribute
-This is a document that is meant to be understood by everyone. Ambitious, *indeed*. To achieve this, there needs to be more definitions added. For that reason, any contribution is appreciated. Styling, corrections, new definitions, anything.
+This is a document that is meant to be understood by everyone - to achieve this, there needs to be more people working on the project. Any type of contribution, styling, corrections, new definitions is highly encouraged. 

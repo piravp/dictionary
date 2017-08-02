@@ -30,7 +30,7 @@ Especially for beginners, the new terms can be overwhelming. This document seeks
         3.2 Applied mathematics
     4. Physics
         
-*The current version (.pdf) can be found here [here](./dictionary.pdf).*
+*The current version (.pdf) can be found [here](./dictionary.pdf).*
 
 ### Contribute
 This is a document that is meant to be understood by everyone. Ambitious, *indeed*. To achieve this, there needs to be more definitions added. For that reason, any contribution is appreciated. Styling, corrections, new definitions, anything.

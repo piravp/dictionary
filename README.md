@@ -33,4 +33,4 @@ Especially for beginners, new terms can be overwhelming. This document seeks to 
 *The current version (.pdf) can be found [here](./dictionary.pdf).*
 
 ### Contribute
-This is a document that is meant to be understood by everyone - to achieve this, there needs to be more people working on the project. Any type of contribution, styling, corrections, new definitions is highly encouraged. 
+This is a document that is meant to be understood by everyone. To achieve this, there needs to be more people working on the project. Any type of contribution, styling, corrections, new definitions, translations is highly encouraged. 

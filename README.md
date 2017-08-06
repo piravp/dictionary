@@ -19,8 +19,10 @@ Especially for beginners, new terms can be overwhelming. This document seeks to 
         1.2 Cybersecurity
         1.3 Networking
         1.4 Software development
-        1.5 Web
-        1.6 Other
+        1.5 Hardware
+        1.6 Web
+        1.7 Operating System
+        1.8 Other
     2. Encryption
         2.1 General
         2.2 Symmetric encryption

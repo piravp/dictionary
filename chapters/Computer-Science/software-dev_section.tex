@@ -1,16 +1,24 @@
 \section{Software development}
+\setcounter{secnumdepth}{3}
 
-\textbf{ASP.NET} \\
-\textit{.} 
+% -------------------
+% General
+\subsection{General}
+
+\textbf{Abstraction layer}
+\textit{Empty.}
 
 \textbf{Async/await}
-\textit{.}
+\textit{Empty.}
 
 \textbf{Binary file\index{binary file}} \\
 \textit{Binary means executable code that can be run directly by the machine without the need to be compiled.}
 
+\textbf{Docker (program) \index{Docker}} \\
+Docker is a tool designed to make it easier to create, deploy, and run applications by using containers. Containers allow a developer to package up an application with all of the parts it needs, such as libraries and other dependencies, and ship it all out as one package. By doing so, thanks to the container, the developer can rest assured that the application will run on any other machine regardless of any customized settings that machine might have that could differ from the machine used for writing and testing the code.
+
 \textbf{Framework\index{framework}} \\
-\textit{hello}
+\textit{Empty.}
 
 \textbf{Git\index{git}} \\
 Git is a version control system. 
@@ -32,9 +40,64 @@ Refers to the design of any system composed of separate components that can be c
 \textit{A wrapper can be a piece of software that provides compatibility layer to another piece of software.}
 
 \textbf{Wrapper function\index{wrapper function}} \\
-\textit{A wrapper function is a function that exists just to call another function. }
+\textit{A wrapper function is a function that exists for the sole purpose of calling another function.}
 
 
 \textbf{Driver} \\
 Source: \url{https://www.youtube.com/watch?v=t-aRlwLI-b0}
+
+\clearpage
+% --------------------------------------------------------------------------------------
+%                                       .NET 
+\subsection{.NET}
+
+\textbf{ASP.NET} \\
+\textit{Empty.}
+
+
+\textbf{Common Language Runtime \index{Common Language Runtime}\cite{software:CLR}} \\
+The common language runtime manages memory, thread execution, code execution, code safety verification, compilation, and other system services. 
+The managed environment of the runtime also eliminates many common software issues. For example, the runtime automatically handles object layout and manages references to objects, releasing them when they are no longer being used. This automatic memory management resolves the two most common app errors, memory leaks and invalid memory references.
+The runtime is designed to enhance performance. Although the common language runtime provides many standard runtime services, managed code is never interpreted. A feature called just-in-time (JIT) compiling enables all managed code to run in the native machine language of the system on which it's executing.
+
+\textbf{.NET Framework \index{n@.NET Framework} \cite{software:.net}} \\
+The .NET Framework is a managed execution environment that provides a variety of services to its running apps. It consists of two major components: the common language runtime (CLR), which is the execution engine that handles running apps, and the .NET Framework Class Library, which provides a library of tested, reusable code that developers can call from their own apps. The services that the .NET Framework provides to running apps include the following:
+\begin{itemize}
+    \item \textbf{Memory management.} In many programming languages, programmers are responsible for allocating and releasing memory and for handling object lifetimes. In .NET Framework apps, the CLR provides these services on behalf of the app.
+    
+    \item \textbf{A common type system.} In traditional programming languages, basic types are defined by the compiler, which complicates cross-language interoperability. In the .NET Framework, basic types are defined by the .NET Framework type system and are common to all languages that target the .NET Framework.
+
+     \item \textbf{An extensive class library.} Instead of having to write vast amounts of code to handle common low-level programming operations, programmers use a readily accessible library of types and their members from the .NET Framework Class Library.
+
+     \item \textbf{Development frameworks and technologies.} The .NET Framework includes libraries for specific areas of app development, such as ASP.NET for web apps, ADO.NET for data access, and Windows Communication Foundation for service-oriented apps.
+
+     \item \textbf{Language interoperability.} Language compilers that target the .NET Framework emit an intermediate code named Common Intermediate Language (CIL), which, in turn, is compiled at runtime by the common language runtime. With this feature, routines written in one language are accessible to other languages, and programmers focus on creating apps in their preferred languages.
+\end{itemize}
+
+\textbf{.NET Framework Architecture\index{n@.NET Framework Architecture}} \\
+.NET is a software framwork developed by Microsoft that runs primarily on Windows.
+It includes a large class library named Framework Class Library (FCL) and provides language interoperability (you can write some pieces of your application in Visual Basic, others in C\# and others in another language - and they can all communicate with each other). Programs written for .NET Framework execute in a software environment named Common Language Runtime (CLR), an application virtual machine that provides services such as security, memory management, and exception handling. (As such, computer code written using .NET Framework is called "managed code".) FCL and CLR together make up the .NET Framework.
+
+\textbf{.NET Core\index{n@.NET Core}} \cite{software:NETCore} \\
+.NET Core is a general purpose, modular, cross-platform and open source implementation of the .NET Standard. It contains many of the same APIs as the .NET Framework (but .NET Core is a smaller set) and includes runtime, framework, compiler and tools components that support a variety of operating systems and chip targets. Here are the main characteristics of .NET Core: 
+\begin{itemize}
+    \item \textbf{Cross-platform:} .NET Core provides key functionality to implement the app features you need and reuse this code regardless of your platform target. It currently supports three main operating systems: Windows, Linux and macOS. You can write apps and libraries that run unmodified across supported operating systems. 
+    
+    \item \textbf{Open source:} .NET Core is one of the many projects under the stewardship of the .NET Foundation and is available on GitHub. 
+    
+   \item \textbf{Modular:} .NET Core is modular because it's released through NuGet in smaller assembly packages. Rather than one large assembly that contains most of the core functionality, .NET Core is made available as smaller feature-centric packages. This enables a more agile development model for us and allows you to optimize your app to include just the NuGet packages you need. The benefits of a smaller app surface area include tighter security, reduced servicing, improved performance, and decreased costs in a pay-for-what-you-use model.
+\end{itemize}
+
+
+
+
+
+
+
+\textbf{.NET Runtime \index{n@.NET}} \\
+\textit{Empty.}
+
+
+\textbf{.NET Standard} \\
+\textit{Empty.}
 

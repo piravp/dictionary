@@ -19,6 +19,10 @@
 \usepackage{imakeidx}       % Indices - alphabetic list of main terms
 \makeindex[columns=2, title=Index, options= -s resources/index-style.ist]
 \usepackage{changepage}     % used to adjust indentation on subsections
+\usepackage{titlesec}       % add subsection inside subsections (e.g. 2.1.1)
+\usepackage{datetime}       % insert date automatically (used in the title page)
+\newdateformat{monthyeardate}{%
+                                \monthname[\THEMONTH] \THEYEAR}
 
 
 
@@ -38,7 +42,7 @@
 \title{\textbf{The Dictionary \\ About \\ (Almost) \\ Everything} }
 \titlepic{\includegraphics[width=8cm]{resources/dict.jpg}}
 \author{\textit{Piraveen Perinparajan}}
-\date{January 2017}
+\date{\monthyeardate\today}
 \end{titlepage}
 \maketitle
 

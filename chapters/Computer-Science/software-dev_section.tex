@@ -14,6 +14,9 @@
 \textbf{Binary file\index{binary file}} \\
 \textit{Binary means executable code that can be run directly by the machine without the need to be compiled.}
 
+\textbf{Dependency Injection}
+\textit{Empty.}
+
 \textbf{Docker (program) \index{Docker}} \\
 Docker is a tool designed to make it easier to create, deploy, and run applications by using containers. Containers allow a developer to package up an application with all of the parts it needs, such as libraries and other dependencies, and ship it all out as one package. By doing so, thanks to the container, the developer can rest assured that the application will run on any other machine regardless of any customized settings that machine might have that could differ from the machine used for writing and testing the code.
 
@@ -41,6 +44,44 @@ Refers to the design of any system composed of separate components that can be c
 
 \textbf{Wrapper function\index{wrapper function}} \\
 \textit{A wrapper function is a function that exists for the sole purpose of calling another function.}
+
+\textbf{SQL \index{SQL}} \\
+\acrfull{sql} is a language used in programming to manage data in a \acrfull{rdbms}.
+
+\textbf{MySQL \index{MySQL}} \\
+MySQL is a SQL-based RDBMS. This means that MySQL uses SQL as a query language to perform the necessary queries. In a relational database, such as MySQL, every table is connected to some other table through relations. 
+
+
+\begin{table}[!htb]
+    \caption{Relation between a person and a car}
+    \begin{minipage}{.5\linewidth}
+      \centering
+        \begin{tabular}{|l|}
+            \hline
+            \textbf{Person} \\ \hline
+            Name            \\ \hline
+            Age             \\ \hline
+        \end{tabular}
+    \end{minipage}%
+    \begin{minipage}{.5\linewidth}
+      \centering
+        \begin{tabular}{|l|}
+            \hline
+            \textbf{Car}    \\ \hline
+            Model            \\ \hline
+            Year             \\ \hline
+            Owner             \\ \hline
+        \end{tabular}
+    \end{minipage} 
+\end{table}
+
+For instance, these tables may be connected like this: A person may have many cars - but one car only has one owner. 
+
+\textbf{NoSQL \index{NoSQL}} \cite{software:NoSQL} \\
+In contrast to MySQL, NoSQL is a database system where the data isn't structured in relations. Instead, everything is stored as key-value pairs inside one single document. A key-value pair may contain a string, integer, an array or a object that holds even more key-value pairs. 
+
+\textbf{MongoDB} \cite{software:MongoDB} \\
+\textit{Empty.}
 
 
 \textbf{Driver} \\

@@ -31,8 +31,9 @@ Especially for beginners, new terms can be overwhelming. This document seeks to 
         3.1 Calculus
         3.2 Applied mathematics
     4. Physics
+    5. Artificial Intelligence
         
 *The current version (.pdf) can be found [here](./dictionary.pdf).*
 
 ### Contribute
-This is a document that is meant to be understood by everyone. To achieve this, any type of contribution, styling, corrections, new definitions, translations is highly encouraged. 
+The hope is that anyone who wants to learn more about any of the topics in this book, should be able to read a book/article about that topic purely using this dictionary. Therefore, the book should cover *at least* most of the basic and intermediate terms for that topic. To achieve this, any type of contribution, styling, corrections, new definitions, translations is highly encouraged. 

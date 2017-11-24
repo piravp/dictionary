@@ -32,6 +32,9 @@ Especially for beginners, new terms can be overwhelming. This document seeks to 
         3.2 Applied mathematics
     4. Physics
     5. Artificial Intelligence
+        5.1 General
+        5.2 Search
+        5.3 Game theory
         
 *The current version (.pdf) can be found [here](./dictionary.pdf).*
 

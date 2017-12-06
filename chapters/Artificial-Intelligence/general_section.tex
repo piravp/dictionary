@@ -11,23 +11,49 @@ The architecture is a computing device of some sort with physical sensors and ac
 \textbf{Artificial General Intelligence\index{artificial general intelligence}} \\
 \acrfull{agi} is a machine that is able to solve \textit{any} intellectual task that a human being can. \acrshort{agi} is the ultimate goal in the field of \acrshort{ai} research. \acrshort{agi} is also referred to as true AI\index{true AI}, full AI\index{full AI} or strong AI\index{strong AI}. 
 
-\textbf{Fuzzy logic} \\
-Fuzzy logic allows for degrees of truth instead of just true or false found in conventional logic.
-% Computerphile about fuzzy logic: https://www.youtube.com/watch?v=r804UF8Ia4c
+\textbf{Artificial Superintelligence\index{artificial superintelligence}} \\
+\acrfull{asi} is an AI that exceeds human capabilities.
+
+\textbf{Fully-Connected Neural Networks\index{artificial superintelligence}} \\
+In a fully connected layer each neuron is connected to every neuron in the previous layer, and each connection has it's own weight. This is a general purpose connection pattern and makes no assumptions about the \textit{features} in the data. These networks don't scale well considering they're expensive in terms of memory (weights) and computation (connections).
+
+
+\textbf{Convolutional Neural Networks\index{artificial superintelligence}} \\
+In a convolutional layer each neuron is only connected to a few nearby (local) neurons in the previous layer, and the neurons share weights. These type of networks have been proven successfully especially in the fields of computer vision and natural language processing. 
+
+
+\textbf{Feature \index{feature}} \\
+Say you want to classify a bunch of apples and oranges. When training data using machine learning, the different measurements used (which in this case could be for instance weights, texture and color) are called features. One can think of features as the input in machine learning. 
+
+
+\textbf{Label \index{label}} \\
+A label is the output after performing machine learning on a set of training data. Which in our previous example would be "apple", "orange", "banana", etc.
+
 
 \textbf{Neural network} \\
 \textit{Empty.}
 
+
 \textbf{Cluster} \\
 Groups of data.
 
+
+\textbf{Classifier \index{classifier}} \\
+%[Temporary]
+A classifier can be thought of as a function that takes some data as input and assisgn a label to it as output. The technique to create a classifier automatically is called \textit{supervised learning}. Classifiers may be used to train a set of images to recognize different fruits, or it may be given e-mails to detect what is spam.
+
+
+\textbf{Machine learning \index{machine learning}} \\
+Machine learning can be seen as a subfield in artificial intelligence. Machine learning is the study of algorithms that learn from examples and experience rather than relying on hard coded rules. 
+
+
 \textbf{Unsupervised learning} \\
-In machine learning, unsupervised learning is the task of finding similarities in data that is unlabeled. It's up to the unsupervised learning system to find some sort of pattern in the data, sort the data which can then be grouped together in \textit{clusters}. It's up to the user to provide the learning system with desired number of clusters - which is often problematic because that is often times a question in itself. 
+In \textit{machine learning}, unsupervised learning is the task of finding similarities in data that is unlabeled. It's up to the unsupervised learning system to find some sort of pattern in the data, sort the data which can then be grouped together in \textit{clusters}. It's up to the user to provide the learning system with the desired number of clusters - which is often problematic because that is very often a question in itself. 
 
 
 \textbf{Supervised learning} \\
 % https://youtu.be/qDbpYUbf3e0
-In supervised learning, the system has already been trained with some labeled data (called training data) giving the system an indication of how the data should be grouped. Under the hood, the system has created a function that keeps improving as even more data is being fed. Although supervised learning is a good learning system, it has some drawbacks such as \textit{overfitting} and the need for large enough amounts of training data. Supervised learning is used in \textit{neural networks}. 
+In supervised learning, the system has already been trained with some labeled data (called training data) giving the system an indication of how the data should be grouped. Under the hood, the system has created a function (called a \textit{classifier}) that keeps improving as even more data is being fed. Although supervised learning is a good learning system, it has some drawbacks such as \textit{overfitting} and the need for large enough amounts of training data. Supervised learning is used in \textit{neural networks}. 
 
 
 \textbf{Overfitting} \\

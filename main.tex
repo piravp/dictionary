@@ -6,15 +6,13 @@
 \newcommand{\sectionbreak}{\clearpage}  % Start new page with each section
 \titleformat{\chapter}[hang]{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter:}{1em}{} % Chapter number and name on same line
 \usepackage{graphicx}                                                                           % Implement images
-\usepackage{hyperref}                                                                           % Make content of table clickable
+\usepackage[hidelinks]{hyperref}                                                                           % Make content of table clickable and remove red boxes around links (hidelinks)
 \usepackage{color}
 \usepackage{graphicx}
 \usepackage{biblatex}                                                                           % Bibliography
 \addbibresource{resources/bibliography.bib}                                                               % Specify .bib database
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \usepackage{url}
-%\usepackage{hyperref}
-%\titlehead{\centering\includegraphics[width=6cm]{dict.jpg}}
 \usepackage{titlepic}       %Graphics in frontpage
 \usepackage[acronym,toc]{glossaries} % Packet for acronyms
 \usepackage{imakeidx}       % Indices - alphabetic list of main terms

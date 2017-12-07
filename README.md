@@ -35,6 +35,7 @@ Especially for beginners, new terms can be overwhelming. This document seeks to 
         5.1 General
         5.2 Search
         5.3 Game theory
+        5.4 Cognitive Architecture
         
 *The current version (.pdf) can be found [here](./dictionary.pdf).*
 
